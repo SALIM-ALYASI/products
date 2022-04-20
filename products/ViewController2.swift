@@ -12,6 +12,7 @@ class ViewController2: UIViewController {
     var name:String?
     var musicdataas :Int?
     @IBOutlet weak var producttypeTextField: UITextField!
+    @IBOutlet weak var producttypeUIButton: UIButton!
     var producttype:String?
     let  context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     override func viewDidLoad() {
@@ -47,6 +48,7 @@ class ViewController2: UIViewController {
         }else{
             createltem(name: name ?? "",producttype: "احتياط", product_name:producttype ?? "")
         }
+        producttypeUIButton.isHidden = true
         
     }
     

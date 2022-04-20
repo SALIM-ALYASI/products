@@ -163,6 +163,7 @@
                     <connections>
                         <outlet property="nameTextField" destination="5d9-wv-KYM" id="14o-XL-Ynn"/>
                         <outlet property="producttypeTextField" destination="Q8d-eu-uL4" id="1bq-oS-ZUD"/>
+                        <outlet property="producttypeUIButton" destination="HYp-1c-73D" id="cbV-p6-yag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qv9-Nt-Gt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

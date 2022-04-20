@@ -82,10 +82,7 @@ extension ViewController:UITableViewDelegate , UITableViewDataSource{
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! Cell
        cell.productsdata(musicdata[indexPath.row] )
-        if musicdata.count == 1{
-                     print(indexPath.row)
-                     createltem( musicdata[indexPath.row],producttype: "الأساسي")
-                 }
+       
         return cell
         
         }
@@ -106,10 +103,10 @@ extension ViewController:UITableViewDelegate , UITableViewDataSource{
    // createltem(_ productsData: ProductsData,producttype:String)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
-//            if musicdata[indexPath.row].product_type == "احتياط"{
-//                print(indexPath.row)
-//                createltem( musicdata[0],producttype: "الأساسي")
-//            }
+            if indexPath.row >= 0{
+                         print(indexPath.row)
+                         createltem( musicdata[indexPath.row],producttype: "الأساسي")
+                     }
         }
     }
 }
